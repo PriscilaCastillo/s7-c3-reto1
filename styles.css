@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+
+    font-family: 'Montserrat';
+    margin-left: 65px;
+    margin-top: 71px;
+}
+
+section {
+    padding: 20px;
+    width: 100%;
+    background: #FFF;
+    margin-bottom: 40px;
+    border-radius: 12px;
+}
+
+img {
+    width: 100%;
+}
+
+.columns {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    max-width: 1440px;
+    padding: 65px;
+    background: #F2F2F2;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 32px;
+}
+
+.column-1 {
+    max-width: 413px;
+}
+
+.column-2 {
+    max-width: 862px;
+}
+
+/*----------Presentacion-----------*/
+
+
+
+.name {
+    color: #4F4F4F;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.front {
+    color: var(--Gray-3, #828282);
+    font-size: 18px;
+    font-weight: 500;
+    display: block;
+    margin-top: 20px;
+}
+
+.info-container {
+    margin-top: 20px;
+}
+
+.personal-info {
+    color: var(--Gray-2, #4F4F4F);
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.about {
+    color: var(--Gray-3, #828282);
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 35px;
+}
+
+/*----------Experiencia-----------*/
+
+.tittle-box {
+    color: #4F4F4F;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 45px;
+}
+
+.xp-img {
+    width: 200px;
+}
+
+.article-xp {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+.xp-date {
+    color: #828282;
+    font-size: 14px;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.xp-name {
+    color: #333;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.xp-description {
+    color: #828282;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/*----------Hobbies-----------*/
+
+.hobbies {
+    background: #FFF;
+}
+
+.img-hobbies {
+    margin-bottom: 25px;
+}
+
+.hobbie-tittle {
+    margin-bottom: 10px;
+}
+
+.hobbie-container {
+    margin-bottom: 25px;
+}
+
+.hobbie-description {
+    color: #828282;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/*----------Skills container-----------*/
+.skills-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+/*----------Skills-----------*/
+.skills {
+    max-width: 415.025px;
+    background: #FFF;
+}
+
+.label {
+    color: #4F4F4F;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.skill-tittle {
+    color: var(--Gray-2, #4F4F4F);
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.skills-percent {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    
+}
+
+progress {
+    width: 230px;
+    height: 20px;
+}
+
+/*----------Programas-----------*/
+
+.program {
+    align-self: flex-start;
+}
+
+/*----------Proyectos-----------*/
+
+.project-tittle {
+    color: #4F4F4F;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.project-container {
+    display: flex;
+    margin-bottom: 35px;
+    justify-content: space-between;
+
+}
+
+.project-img {
+    width: 320px;
+}
+
+.project-content {
+    max-width: 450px;
+    width: 100%;
+
+}
+
+.hashtag {
+    color: #4F4F4F;
+    font-size: 16px;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 25px;
+}
+
+.project-type {
+    color: #333;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 18px;
+}
+
+.project-description {
+    color: #828282;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    line-height: 25px;
+}
+
+.demo-button {
+    border-radius: 12px;
+    background: #2F80ED;
+    color: white;
+    font-family: Montserrat;
+    width: 136px;
+    height: 45px;
+    font-size: 16px;
+    border: none;
+    margin-right: 10px;
+}
+
+.code-button {
+    border-radius: 12px;
+    background: #FFF;
+    color: #2F80ED;
+    font-family: Montserrat;
+    width: 120px;
+    height: 45px;
+    font-size: 16px;
+    border: 1px solid #2F80ED;
+}
+
+/*----------Blog-----------*/
+
+.blog-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.blog-head {
+    color: #4F4F4F;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.blog-up {
+    color: #E0E0E0;
+    font-size: 16px;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.blog-tittle {
+    color: #333;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    max-width: 180px;
+}
+
+.blog-text {
+    color: #828282;
+    font-size: 16px;
+    font-weight: 500;
+    width: 320px;
+}
+
+.blog-text p:first-child{
+margin-bottom: 20px;
+}
+
+.dev {
+    color: #2F80ED;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.blog-img {
+    width: 820px;
+}
+
+@media (max-width: 1400px) {
+
+    .skills-percent{
+        
+        flex-direction: column;
+        max-width: 200px;
+    }
+
+}
