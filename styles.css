@@ -8,13 +8,12 @@
 body {
 
     font-family: 'Montserrat';
-    margin-left: 65px;
+
     margin-top: 71px;
 }
 
 section {
     padding: 20px;
-    width: 100%;
     background: #FFF;
     margin-bottom: 40px;
     border-radius: 12px;
@@ -24,28 +23,26 @@ img {
     width: 100%;
 }
 
-.columns {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    max-width: 1440px;
-    padding: 65px;
+.all {
     background: #F2F2F2;
     margin-left: auto;
     margin-right: auto;
+    max-width: 1440px;
+    padding: 65px;
+}
+
+.columns {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     gap: 32px;
 }
 
 .column-1 {
-    max-width: 413px;
+    min-width: 300px;
 }
 
-.column-2 {
-    max-width: 862px;
-}
 
 /*----------Presentacion-----------*/
-
-
 
 .name {
     color: #4F4F4F;
@@ -152,10 +149,6 @@ img {
 }
 
 /*----------Skills-----------*/
-.skills {
-    max-width: 415.025px;
-    background: #FFF;
-}
 
 .label {
     color: #4F4F4F;
@@ -173,15 +166,14 @@ img {
 }
 
 .skills-percent {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 35% 65%;
     margin-bottom: 20px;
-    
 }
 
 progress {
-    width: 230px;
     height: 20px;
+    width: 100%;
 }
 
 /*----------Programas-----------*/
@@ -199,18 +191,16 @@ progress {
 }
 
 .project-container {
-    display: flex;
+    display: grid;
     margin-bottom: 35px;
-    justify-content: space-between;
+    grid-template-columns: 40% 60%;
+    gap: 30px;
 
 }
 
-.project-img {
-    width: 320px;
-}
 
 .project-content {
-    max-width: 450px;
+
     width: 100%;
 
 }
@@ -262,11 +252,13 @@ progress {
 }
 
 /*----------Blog-----------*/
+.blog {
+    padding: 30px 0 20px 10px;
+}
 
 .blog-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 80px;
+    display: grid;
+    grid-template-columns: 48% 52%;
 }
 
 .blog-head {
@@ -295,11 +287,11 @@ progress {
     color: #828282;
     font-size: 16px;
     font-weight: 500;
-    width: 320px;
+    max-width: 320px;
 }
 
-.blog-text p:first-child{
-margin-bottom: 20px;
+.blog-text p:first-child {
+    margin-bottom: 20px;
 }
 
 .dev {
@@ -309,16 +301,60 @@ margin-bottom: 20px;
     margin-top: 20px;
 }
 
-.blog-img {
-    width: 820px;
+
+
+@media (max-width: 1100px) {
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .project-container {
+        grid-template-columns: 1fr;
+    }
+
+    .blog-container {
+        grid-template-columns: 1fr;
+    }
+
+    .blog-text {
+        max-width: 100%;
+    }
+
+    .blog-text p {
+        width: 90%;
+    }
+
+    .dev {
+        margin-bottom: 20px;
+    }
+
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 773px) {
 
-    .skills-percent{
-        
-        flex-direction: column;
-        max-width: 200px;
+    .columns {
+        grid-template-columns: 1fr;
+    }
+
+    .blog-tittle {
+        color: #333;
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 25px;
+        max-width: 100%;
+    }
+
+    .blog-text {
+        max-width: 100%;
+    }
+
+    .blog-text p {
+        width: 90%;
+    }
+
+    .dev {
+        margin-bottom: 20px;
     }
 
 }
